@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="Starbucks/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;500&display=swap"
@@ -15,7 +15,7 @@
 <body>
     <div class="circle"></div>
 
-    <img src="./Imagens/logo.png" alt="starbucks logo" class="logo">
+    <img src="Starbucks/Imagens/logo.png" alt="starbucks logo" class="logo">
 
     <div class="content">
         <div class="textBox">
@@ -32,14 +32,14 @@
         </div>
 
         <div class="imageBox">
-            <img src="./Imagens/img1.png" alt="green coffee" class="greenCoffee">
+            <img src="Starbucks/Imagens/img1.png" alt="green coffee" class="greenCoffee">
         </div>
     </div>
 
     <div class="menu">
-        <img src="./Imagens/img-pequena1.png" alt="little coffee" class="littleCoffee green">
-        <img src="./Imagens/img-pequena2.png" alt="little coffee" class="littleCoffee yellow">
-        <img src="./Imagens/img-pequena3.png" alt="little coffee" class="littleCoffee pink">
+        <img src="Starbucks/Imagens/img-pequena1.png" alt="little coffee" class="littleCoffee green">
+        <img src="Starbucks/Imagens/img-pequena2.png" alt="little coffee" class="littleCoffee yellow">
+        <img src="Starbucks/Imagens/img-pequena3.png" alt="little coffee" class="littleCoffee pink">
     </div>
 </body>
 <script>
@@ -50,17 +50,17 @@
     let pinkGlass = document.querySelector(".pink");
 
     greenGlass.addEventListener("click", () => { /* verifficar se ocorreu algum evento com a variavél */
-        glassImg.src = "./Imagens/img1.png"
+        glassImg.src = "Starbucks/Imagens/img1.png"
         circle.style.background = "#017143"
     });
 
     yellowGlass.addEventListener("click", () => {
-        glassImg.src = "./Imagens/img2.png"
+        glassImg.src = "Starbucks/Imagens/img2.png"
         circle.style.background = "#eb7495"
     });
 
     pinkGlass.addEventListener("click", () => {
-        glassImg.src = "./Imagens/img3.png"
+        glassImg.src = "Starbucks/Imagens/img3.png"
         circle.style.background = "#d752b1"
     });
 </script>
