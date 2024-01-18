@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="circle"></div>
+
+    <img src="./Imagens/logo.png" alt="starbucks logo" class="logo">
+
+    <div class="content">
+        <div class="textBox">
+            <h2>It's not just coffee</h2>
+            <h2>It's <span>Starbucks</span></h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet congue mi. Class aptent taciti
+                sociosqu
+                ad litora torquent per conubia nostra, per inceptos himenaeos. Proin urna nisl, consequat a efficitur
+                vel,
+                blandit et augue.</p>
+
+            <button>Find out more!</button>
+        </div>
+
+        <div class="imageBox">
+            <img src="./Imagens/img1.png" alt="green coffee" class="greenCoffee">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./Imagens/img-pequena1.png" alt="little coffee" class="littleCoffee green">
+        <img src="./Imagens/img-pequena2.png" alt="little coffee" class="littleCoffee yellow">
+        <img src="./Imagens/img-pequena3.png" alt="little coffee" class="littleCoffee pink">
+    </div>
+</body>
+<script>
+    let glassImg = document.querySelector(".greenCoffee"); /* armazenar alguma informação do html */
+    let circle = document.querySelector(".circle");
+    let greenGlass = document.querySelector(".green");
+    let yellowGlass = document.querySelector(".yellow");
+    let pinkGlass = document.querySelector(".pink");
+
+    greenGlass.addEventListener("click", () => { /* verifficar se ocorreu algum evento com a variavél */
+        glassImg.src = "./Imagens/img1.png"
+        circle.style.background = "#017143"
+    });
+
+    yellowGlass.addEventListener("click", () => {
+        glassImg.src = "./Imagens/img2.png"
+        circle.style.background = "#eb7495"
+    });
+
+    pinkGlass.addEventListener("click", () => {
+        glassImg.src = "./Imagens/img3.png"
+        circle.style.background = "#d752b1"
+    });
+</script>
+
+</html>
